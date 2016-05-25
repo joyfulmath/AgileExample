@@ -8,12 +8,24 @@ import java.util.Vector;
  */
 public class DrawShape {
 
-    public void drawShapes(Vector<Shape> shapes)
+    public static void drawShapes(Vector<Shape> shapes)
     {
+        ShapeVisitImpl shapeVisit = new ShapeVisitImpl();
         for(Shape shape:shapes)
         {
+            shape.accept(shapeVisit);
             shape.draw();
         }
 
+    }
+
+    public static void action()
+    {
+        Vector<Shape> mShapes = new Vector<>(10);
+        Shape s = new Cycle();
+        mShapes.add(s);
+        Shape m = new Square();
+        mShapes.add(m);
+        drawShapes(mShapes);
     }
 }

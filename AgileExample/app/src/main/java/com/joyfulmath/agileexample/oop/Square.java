@@ -4,12 +4,12 @@ import com.joyfulmath.agileexample.TraceLog;
 
 /**
  * @author deman.lu
- * @version on 2016-05-25 15:02
+ * @version on 2016-05-25 14:58
  */
-public class Cycle extends Shape {
+public class Square extends Shape {
     @Override
     void draw() {
-        TraceLog.i("Cycle draw with color:"+color);
+        TraceLog.i("Square draw with color:" + color);
     }
 
     @Override
