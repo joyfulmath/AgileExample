@@ -1,4 +1,4 @@
-package com.joyfulmath.agileexample.singletheroy;
+package com.joyfulmath.agileexample.principle.singletheroy;
 
 /**
  * @author deman.lu

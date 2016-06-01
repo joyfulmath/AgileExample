@@ -1,4 +1,4 @@
-package com.joyfulmath.agileexample.oop;
+package com.joyfulmath.agileexample.principle.oop;
 
 /**
  * @author deman.lu
