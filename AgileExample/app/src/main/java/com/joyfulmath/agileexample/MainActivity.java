@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.joyfulmath.agileexample.activeobject.DelayedTyper;
+import com.joyfulmath.agileexample.command.Manager;
 import com.joyfulmath.agileexample.principle.oop.DrawShape;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        DrawShape.action();
+//        DrawShape.action();
+//        Manager.main();
+        DelayedTyper.Main();
     }
 
     @Override
