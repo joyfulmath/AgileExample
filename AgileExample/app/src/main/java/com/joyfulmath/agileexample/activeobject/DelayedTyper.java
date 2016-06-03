@@ -33,7 +33,6 @@ public class DelayedTyper implements CommandInterface {
         CommandInterface stopCommand = new StopCommand();
         engin.addCommand(new SleepCommand(2000, engin, stopCommand));
         engin.run();
-        TraceLog.i(printStr);
     }
 
     public DelayedTyper(long delay, char c)
