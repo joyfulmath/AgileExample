@@ -4,33 +4,27 @@ package com.joyfulmath.agileexample.template.method;
  * @author deman.lu
  * @version on 2016-06-09 10:04
  */
-public class BubbleSorter {
-    static int operations = 0;
-    public static int sort(int[] array)
+public abstract class BubbleSorter {
+    private int operations = 0;
+    protected int length = 0;
+    protected int doSort()
     {
         operations = 0;
-        if(array.length<=1)
+        if(length<=1)
             return operations;
 
-        for(int nextToLast = array.length-2;nextToLast>=0;nextToLast--)
+        for(int nextToLast = length-2;nextToLast>=0;nextToLast--)
             for(int index = 0;index<=nextToLast;index++)
             {
-                compareAndSwap(array,index);
+                if(outOfOrder(index))
+                {
+                    swap(index);
+                }
             }
         return operations;
     }
 
-    private static void compareAndSwap(int[] array, int index) {
-        if(array[index]>array[index+1])
-        {
-            swap(array, index);
-        }
-        operations++;
-    }
+    protected abstract void swap(int index);
+    protected abstract boolean outOfOrder(int index);
 
-    private static void swap(int[] array, int index) {
-        int temp = array[index];
-        array[index] = array[index+1];
-        array[index+1] = temp;
-    }
 }

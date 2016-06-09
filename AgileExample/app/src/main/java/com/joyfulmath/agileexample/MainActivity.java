@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import com.joyfulmath.agileexample.activeobject.DelayedTyper;
 import com.joyfulmath.agileexample.command.Manager;
 import com.joyfulmath.agileexample.principle.oop.DrawShape;
+import com.joyfulmath.agileexample.template.method.BubbleDemo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
 //        DrawShape.action();
 //        Manager.main();
-        DelayedTyper.Main();
+//        DelayedTyper.Main();
+        BubbleDemo.action();
     }
 
     @Override
